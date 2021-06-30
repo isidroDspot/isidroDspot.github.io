@@ -1,6 +1,7 @@
 <input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
 <input type="button" value="Show string" onClick="getString()" />
 <input type="button" value="Print" onClick="print()" />
+<img id="img" src="" />
 
 <script type="text/javascript">
     function showAndroidToast(toast) {
@@ -16,6 +17,9 @@
 
 <script type="text/javascript">
     function print() {
-        Android.print()
+	document.getElementById('img')
+    .setAttribute(
+        'src', 'data:image/png;base64,'+  Android.getImage());
+        
     }
 </script>
