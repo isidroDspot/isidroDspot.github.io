@@ -1,5 +1,6 @@
 <input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
 <input type="button" value="Show string" onClick="getString()" />
+<input type="button" value="Print" onClick="print()" />
 
 <script type="text/javascript">
     function showAndroidToast(toast) {
@@ -9,6 +10,12 @@
 
 <script type="text/javascript">
     function getString() {
-        alert("ok" + Android.getString())
+        alert("ok " + Android.getString())
+    }
+</script>
+
+<script type="text/javascript">
+    function print() {
+        Android.print()
     }
 </script>
